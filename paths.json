@@ -1,6 +1,7 @@
 {
   "mappings": [
     "/content/michael-kors/:/",
-    "/content/michael-kors/configuration:/.helix/config.json"
+    "/content/michael-kors/configuration:/.helix/config.json",
+    "/content/michael-kors/metadata:/metadata.json"
   ]
 }

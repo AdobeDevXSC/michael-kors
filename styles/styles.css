@@ -37,7 +37,7 @@
   --heading-font-size-xs: 22px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 121px;
 
   /* page max-width */
   --max-width: 1440px;
@@ -263,4 +263,8 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+main .default-content-wrapper {
+  text-align: center;
 }

@@ -33,11 +33,21 @@ header nav[aria-expanded='true'] {
 @media (width >= 900px) {
   header nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    display: grid;
     gap: 0 32px;
     max-width: 1264px;
     padding: 0 32px;
   }
+
+  header .nav-tools {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    background-color: red;
+  }
+
 
   header nav[aria-expanded='true'] {
     min-height: 0;
@@ -142,10 +152,13 @@ header .nav-brand {
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
+
+  /**new **/
+  text-align: center;
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 265px;
   height: auto;
 }
 
@@ -186,6 +199,7 @@ header nav .nav-sections ul > li > ul > li {
     display: block;
     visibility: visible;
     white-space: nowrap;
+    background-color: white;
   }
 
   header nav[aria-expanded='true'] .nav-sections {
@@ -222,6 +236,7 @@ header nav .nav-sections ul > li > ul > li {
     display: flex;
     gap: 24px;
     margin: 0;
+    justify-content: center;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
