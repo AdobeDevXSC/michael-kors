@@ -122,9 +122,23 @@ h1 {
   color: black;
 }
 
-h2 { font-size: var(--heading-font-size-xl); }
+h2 { 
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 4.2px;
+  font-family: "Kors Sans Medium",arial,sans-serif;
+  color: black;
+}
+
 h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
+
+h4 { 
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
 
