@@ -150,6 +150,30 @@
     ]
   },
   {
+    "id": "banner",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "message",
+        "value": "",
+        "label": "Message"
+      },
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "call2Action",
+        "label": "Call to Action",
+        "value": ""
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
