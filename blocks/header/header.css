@@ -227,6 +227,11 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font: .75rem "Kors Sans Medium", arial, sans-serif;
+    letter-spacing: 0.0625rem;
+    padding: 0.625rem 1.5rem;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
