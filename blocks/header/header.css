@@ -158,8 +158,16 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 265px;
+  width: 128px;
   height: auto;
+}
+
+header nav .nav-brand img {
+  width: 265px;
+}
+
+header nav .nav-brand span.icon > img {
+  width: 20px;
 }
 
 /* sections */
@@ -201,6 +209,19 @@ header nav .nav-sections ul > li > ul > li {
     white-space: nowrap;
     background-color: white;
   }
+
+  header nav .nav-brand > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+
+  header nav .nav-brand > div > p:nth-last-child(1) {
+    position: absolute;
+    right: 0;
+  }
+  
 
   header nav[aria-expanded='true'] .nav-sections {
     align-self: unset;
