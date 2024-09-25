@@ -187,6 +187,13 @@
     "id": "hero",
     "fields": [
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "divider",
+        "label": "Horizonal Divider",
+        "value": ""
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
