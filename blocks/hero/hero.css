@@ -44,6 +44,47 @@
   color: black;
 }
 
+.hero .divider > div > p {
+  margin: auto;
+  font-family: "Kors Sans Medium", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: .8px;
+  line-height: 18px;
+}
+
+.hero .divider > div {
+  text-align: center;
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.hero .divider > div::before {
+  content: "";
+  -webkit-box-flex: 1;
+  flex: 1 1;
+  border-bottom: 1px solid #ccc;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  color: #000;
+  margin-right: 26px;
+  border-color: #707070;
+  background-color: red;
+}
+
+.hero .divider > div::after {
+  content: "";
+  -webkit-box-flex: 1;
+  flex: 1 1;
+  border-bottom: 1px solid #ccc;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  color: #000;
+  margin-left: 26px;
+  border-color: #707070;
+  background-color: red;
+}
+
 @media (width >= 900px) {
   .hero {
     /* padding: 40px 32px; */

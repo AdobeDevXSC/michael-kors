@@ -35,11 +35,9 @@ header nav[aria-expanded='true'] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    display: grid;
-    gap: 0 32px;
+    gap: 20px 32px;
     max-width: 1264px;
-    /* margin-top: 20px; */
-    padding: 0 32px;
+    padding: 48px 32px;
   }
 
   header .nav-tools {
@@ -153,18 +151,13 @@ header .nav-brand {
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
-
-  /**new **/
   text-align: center;
-}
-
-header nav .nav-brand img {
-  width: 128px;
-  height: auto;
+  width: 100%;
 }
 
 header nav .nav-brand img {
   width: 265px;
+  height: auto;
 }
 
 header nav .nav-brand span.icon > img {
