@@ -16,8 +16,8 @@
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --link-color: #000;
+  --link-hover-color: #000;
 
   /* fonts */
   --body-font-family: "Kors Sans Book",arial,sans-serif;
@@ -287,8 +287,8 @@ main .section.highlight {
   margin: auto;
 }
 
-main .section.highlight .button-container > a {
-  padding: 9px 15px;
+main .section.highlight p > a {
+  padding: 9px 35px;
   background-color: white;
   border: 1px solid black;
   color: black;
