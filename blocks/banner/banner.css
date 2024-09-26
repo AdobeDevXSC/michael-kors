@@ -19,6 +19,10 @@
   color: white;
 }
 
+.banner.light h2 {
+  color: black;
+}
+
 .banner > div:nth-child(1) {
   padding-top: 20px;
 }
