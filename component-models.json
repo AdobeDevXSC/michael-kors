@@ -243,6 +243,11 @@
           {
             "name": "Image Right",
             "value": "image-right"
+          },
+          ,
+          {
+            "name": "Standard",
+            "value": ""
           }
         ]
       }
