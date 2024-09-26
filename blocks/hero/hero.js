@@ -8,4 +8,5 @@ export default async function decorate(block) {
     const s = sections.shift();
     row.classList.add(s);
   });
+
 }
