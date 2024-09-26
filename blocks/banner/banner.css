@@ -5,7 +5,17 @@
   text-align: center;
 }
 
-.banner h2 {
+.banner.light {
+  background-color: white;
+  color: black;
+}
+
+.banner.dark {
+  background-color: black;
+  color: white;
+}
+
+.banner.dark h2 {
   color: white;
 }
 

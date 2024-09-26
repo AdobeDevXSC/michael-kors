@@ -170,6 +170,23 @@
         "name": "call2Action",
         "label": "Call to Action",
         "value": ""
+      },
+      {
+        "component": "select",
+        "name": "style",
+        "label": "Style",
+        "value": "dark",
+        "placeholder":"dark",
+        "options": [
+          {
+            "name": "Light",
+            "value": "light"
+          },
+          {
+            "name": "Dark",
+            "value": "dark"
+          }
+        ]
       }
     ]
   },

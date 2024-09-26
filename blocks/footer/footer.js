@@ -16,5 +16,23 @@ export default async function decorate(block) {
   const footer = document.createElement('div');
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
+  const country = document.createElement('div');
+  country.classList.add('country-selector');
+
+  const button = document.createElement('button');
+  button.classList.add('country-selector-button');
+
+  const spn = document.createElement('span');
+  spn.classList.add('globe-icon');
+
+  const spnName = document.createElement('span');
+  spnName.classList.add('country-selector-name');
+  spnName.textContent = 'English';
+
+  button.append(spn, spnName);
+  country.append(button);
+
+  footer.append(country);
+
   block.append(footer);
 }

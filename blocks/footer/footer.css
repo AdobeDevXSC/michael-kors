@@ -13,6 +13,22 @@ footer .footer p {
   margin: 0;
 }
 
+footer .footer .globe-icon::before {
+  font-size: 1.375rem;
+  font-family: MK-IconFont, Arial, Helvetica, sans-serif;
+  color: black;
+  content: "";
+}
+
+footer .footer .button:any-link, button {
+  background-color: var(--background-color);
+  color: var(--link-color);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
