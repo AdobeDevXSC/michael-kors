@@ -8,16 +8,35 @@
   min-height: 300px;
 }
 
+.hero.dark {
+  background-color: #000;
+  color: white;
+}
+
+.hero.light {
+  background-color: #fff;
+  color: black;
+}
+
 .hero h1 {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.hero.dark h1 {
+  color: white;
+}
+
+.hero.light h1 {
+  color: #000;
+}
+
 .hero picture {
   object-fit: cover;
   box-sizing: border-box;
   height: 810px;
+  display: flex;
 }
 
 .hero img {
@@ -41,7 +60,14 @@
 .hero > div .button {
   background-color: unset;
   font-family: "Kors Sans Book",arial,sans-serif;
+}
+
+.hero.light > div .button {
   color: black;
+}
+
+.hero.dark > div .button {
+  color: white;
 }
 
 .hero .divider > div > p {
@@ -69,7 +95,6 @@
   color: #000;
   margin-right: 26px;
   border-color: #707070;
-  background-color: red;
 }
 
 .hero .divider > div::after {
@@ -82,11 +107,48 @@
   color: #000;
   margin-left: 26px;
   border-color: #707070;
-  background-color: red;
 }
 
 @media (width >= 900px) {
   .hero {
     /* padding: 40px 32px; */
+  }
+
+  .hero.image-left:not(:has(.divider)) {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+  }
+
+  .hero.image-right:not(:has(.divider)) {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    max-height: 500px;
+  }
+
+  .hero.image-left:not(:has(.divider)) .image, .hero.image-right:not(:has(.divider)) .image {
+    max-width: 50%;
+  }
+
+  .hero.image-left:not(:has(.divider)) picture, .hero.image-right:not(:has(.divider)) picture {
+    height: unset;
+  }
+
+  .hero.image-left:not(:has(.divider)) .text, .hero.image-right:not(:has(.divider)) .text {
+    max-width: 50%;
+    position: absolute;
+    top:50%;
+    transform: translate(-50%, -50%);
+    margin: 0 30px;
+  }
+
+  .hero.image-left:not(:has(.divider)) .text {
+    right: -27%;
+  }
+
+  .hero.image-right:not(:has(.divider)) .text {
+    left:22%;
   }
 }
