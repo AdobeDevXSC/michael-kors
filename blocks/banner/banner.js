@@ -3,10 +3,10 @@ export default function decorate(block) {
   const styleDiv = block.querySelector('div:nth-child(4)');
   const styleClass = styleDiv.textContent.trim();
   styleDiv.remove();
-  block.classList.add(styleClass);
+  if (styleClass) block.classList.add(styleClass);
   const buttonName = buttonNameDiv.textContent.trim();
   buttonNameDiv.remove();
-  block.querySelector('.button-container').textContent = buttonName;
+  if (block.querySelector('.button-container')) block.querySelector('.button-container').textContent = buttonName;
 
   const div = document.createElement('div');
   div.classList.add('promo-conditions');
